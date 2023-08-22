@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Viga&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation style */
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+  margin-left: 30px;
+  color: black;
+  font-weight: 600;
+  padding: 3px 3px;
+  letter-spacing: 1.5px;
+  font-family: 'Viga', sans-serif;
+}
+
+.navbar-brand .pair {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  border-radius: 3px;
+  padding: 3px 3px;
+  font-family: 'Viga', sans-serif;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  color: rgb(61, 61, 61) !important;
+}
+
+.navbar-toggler .fa {
+  font-size: 30px;
+}
+
+.right-menu {
+  margin-right: 30px;
+}
+
+.right-menu li {
+  display: inline-block;
+  color: rgb(27, 27, 27) !important;
+  margin-right: 20px;
+}
+
+.right-menu li .nav-link {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(61, 61, 61) !important;
+  padding: 5px;
+  letter-spacing: 1.5px !important;
+  /* border-radius: 3px; */
+  font-weight: 550;
+  transition: 0.3s;
+}
+
+.right-menu li .nav-link:hover {
+  font-family: 'Roboto', sans-serif;
+  /* color: white!important; */
+  letter-spacing: 1.5px !important;
+  font-weight: 550;
+  /* background-color: rgb(61, 61, 61); */
+  padding: 3px;
+  border-top: 2px solid rgb(61, 61, 61);
+  border-bottom: 2px solid rgb(61, 61, 61);
+  /* border-radius: 3px; */
+}
+
+/* banner style */
+
+.banner-img {
+  margin: 80px 135px;
+  width: 60%;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: -80px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  left: 55%;
+  top: 25%;
+}
+
+.banner-title h1 {
+  font-size: 50px;
+  background-color: rgb(0, 0, 0, 0.75);
+  color: #fff;
+  line-height: 70px;
+  letter-spacing: 1.5px;
+  padding: 0px 10px 0 10px;
+}
+
+.banner-title h3 {
+  font-size: 50px;
+  background-color: rgb(0, 0, 0, 0.75);
+  color: #fff;
+  line-height: 70px;
+  padding: 0px 10px 0 10px;
+}
+
+/* fashion trend */
+
+.fashion-trends {
+  padding: 100px 0px;
+}
+
+.fashion-box {
+  padding: 40px 0px;
+}
+
+.title-style h1 {
+  padding: 30px 0px;
+}
+
+.title-style {
+  margin: 0px auto 80px;
+  height: 120px;
+  width: 80%;
+  max-width: 700px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgb(0, 0, 50, 0.5);
+}
+
+.title-style::after {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: rgb(255, 22, 255);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.title-style::before {
+  content: '';
+  height: 100px;
+  width: 200px;
+  background-color: rgb(255, 22, 255);
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+}
+
+.trending-image {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.trending-image img {
+  width: 100%;
+}
+
+.btn-buy {
+  width: 150px;
+  padding: 10px 0;
+  outline: none !important;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  transition: 0.7s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.trending-image:hover .btn-buy {
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  opacity: 1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.trending-image:hover .overlay {
+  opacity: 0.5;
+  height: 100%;
+}
+
+/* offer */
+
+.offer {
+  background-image: url(../image/offer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 200px;
+}
+
+.row {
+  margin: initial !important;
+}
+
+.subscribe {
+  max-width: 500px;
+  margin-top: 80px;
+  padding: 60px;
+  background-color: #ffffff8c;
+  margin-bottom: 20px;
+}
+
+.offer img {
+  width: 300px;
+  height: 400px;
+  margin: -100px;
+  margin-top: 150px;
+}
+
+/* fashion brands */
+
+.fashion-brands {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+}
+
+.brand-logo {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  margin: 50px auto 30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 40px 0 rgb(110, 130, 208, 0.18);
+}
+
+.brand-logo img {
+  width: 100%;
+  border-radius: 50%;
+  /* margin:  auto */
+}
+
+.fashion-brands p {
+  margin-top: 30px;
+  font-weight: bold;
+  color: gray;
+  font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 150px;
+  background-color: #e3e4f0;
+}
+
+.payment {
+  margin: 50px auto;
+}
+
+.payment img {
+  width: 300px;
+  cursor: pointer;
+}
+
+.footer h5 {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.footer h5::before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: rgb(196, 4, 196);
+  position: absolute;
+  top: 75px;
+}
+
+.footer li {
+  font-size: 15px;
+  list-style: none;
+}
+
+.store img {
+  width: 200px;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.footer .copyright {
+  font-size: 12px;
+}
+
+.footer-icons {
+  text-align: right;
+}
+
+.footer-icons .fa {
+  margin: 0 10px auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner-img {
+    margin: 30px auto;
+    width: 80%;
+  }
+  .banner-title {
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .banner-title h1 {
+    font-size: 22px;
+    padding: 5px;
+    line-height: 20px;
+  }
+  .banner-title h3 {
+    font-size: 18px;
+    padding: 5px;
+    line-height: 20px;
+  }
+  .title-style h1 {
+    font-size: 25px;
+  }
+  .offer img {
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .footer-icons {
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: 150px !important;
+    width: 100% !important;
+  }
+}
+
+/* Women page css */
+
+.carousel-item img {
+  height: max-content;
+  width: 100% !important;
+}
+
+/* Women cloth */
+
+.cloth {
+  margin-top: 150px;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.cloth img {
+  width: 70%;
+}
+
+.product-bottom .fa {
+  color: rgb(126, 22, 126);
+  font-size: 12px;
+}
+
+.product-bottom h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.product-bottom h5 {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.product-image {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.btn-buy {
+  width: 120px;
+  padding: 2px 0;
+  outline: none !important;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  transition: 0.7s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.product-image:hover .btn-buy {
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  opacity: 1;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.product-image:hover .overlay {
+  opacity: 0.5;
+  height: 100%;
+}
+
+/* About page */
+
+
+.section-subtitle {
+  margin-bottom: 20px;
+  padding-left: 7px;
+  font-weight: 550;
+  font-style: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #727171;
+  border-left: 3px solid rgb(196, 4, 196);
+  ;
+}
+
+.section-main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.section-main-title strong {
+  font-weight: 600;
+}
+
+.about-box {
+  box-shadow: 0 0 0 10px #000 inset;
+  margin-top: 0;
+  margin-right: 0;
+  position: relative;
+  display: block;
+}
+
+.box-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 3;
+  transform: translateY(30px) translateX(-30px);
+}
+
+.about-box .videopopup img {
+  transform: translateY(30px) translateX(-30px);
+  width: 100%;
+  z-index: 1;
+}
+
+.about-box a {
+  text-decoration: none;
+}
+
+.about-box a:hover {
+  text-decoration: none;
+}
+
+.btn-color-background {
+  border: none;
+  border-radius: 45px;
+  background-color: rgb(196, 4, 196);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  padding: 12px 48px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.btn-color-background:hover {
+  background-color: rgb(143, 15, 143);
+  color: white;
+}
+
+#about .fashion-box {
+  padding: 40px 0px;
+}
+
+#about .title-style h1 {
+  padding: 30px 0px;
+}
+
+#about .title-style {
+  margin: 0px auto 80px;
+  margin-bottom: 140px;
+  margin-top: 50px;
+  height: 120px;
+  width: 80%;
+  max-width: 400px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgb(0, 0, 50, 0.5);
+}
+
+#about .float {
+  margin-right: 80px;
+}
